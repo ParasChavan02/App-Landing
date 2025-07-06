@@ -12,6 +12,10 @@
      text-align: center;
      margin-top: 50px;
      color: white;
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     box-sizing: border-box;
     }
 
     #content{
@@ -19,8 +23,9 @@
     }
 
     .card-group{
-        margin-left: 80px;
+        margin-left: 0;
         padding-top: 20px;
+        gap: 1rem;
     }
 
     #appstoreicon{
@@ -33,8 +38,30 @@
         text-align: center;
         margin-top: 50px;
         padding-bottom: 150px;
+        width: 100%;
+        box-sizing: border-box;
     }
-  </style>
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    @media (max-width: 767.98px) {
+      .card-group {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 1rem;
+      }
+      .jumbotron {
+        margin-top: 70px;
+        padding: 2rem 0.5rem;
+      }
+      #footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+</style>
 
 </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="150">
